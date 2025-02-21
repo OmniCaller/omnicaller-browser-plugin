@@ -13,4 +13,5 @@ pnpm run dev
 pnpm run build
 ```
 
-[](./img/load-unpacked.png)
+上传插件到浏览器SOP:  
+![](./img/load-unpacked.png)
