@@ -13,6 +13,7 @@ html, body {
   justify-content: center; /* 可选：水平居中内容 */
   align-items: center; /* 可选：垂直居中内容 */
   background-color: #f0f0f0; /* 示例背景色 */
+
 }
 
 .h-10 {
