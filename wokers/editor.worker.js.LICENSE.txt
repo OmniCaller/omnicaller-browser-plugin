@@ -1,0 +1,1265 @@
+/*! ../../core/textChange.js */
+
+/*! ../../../base/common/map.js */
+
+/*! ../../base/common/event.js */
+
+/*! ../../../core/cursorColumns.js */
+
+/*! ./combineTextEditInfos.js */
+
+/*! ../../../base/common/mime.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ./types.js */
+
+/*! ./network.js */
+
+/*! ./tokens.js */
+
+/*! ../languages/modesRegistry.js */
+
+/*! ./minimapColors.js */
+
+/*! ../core/lineRange.js */
+
+/*! ./findSectionHeaders.js */
+
+/*! ../../../../base/common/map.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ../../../platform/log/common/log.js */
+
+/*! ./editorColors.js */
+
+/*! ./smallImmutableSet.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ./extpath.js */
+
+/*! ../../../../../base/common/errors.js */
+
+/*! ./languagesRegistry.js */
+
+/*! ./beforeEditPositionMapper.js */
+
+/*! ./ast.js */
+
+/*! ./algorithms/diffAlgorithm.js */
+
+/*! ./beforeEditPositionMapper.js */
+
+/*! ../../../platform/theme/common/themeService.js */
+
+/*! ../core/eolCounter.js */
+
+/*! ./linesDiffComputer.js */
+
+/*! ../../../base/common/map.js */
+
+/*! ../../../base/common/network.js */
+
+/*! ./colors/miscColors.js */
+
+/*! ../../../base/common/mime.js */
+
+/*! ../colorUtils.js */
+
+/*! ../../../base/common/observable.js */
+
+/*! ../core/textModelDefaults.js */
+
+/*! ../../core/stringBuilder.js */
+
+/*! ../network.js */
+
+/*! ../../core/lineRange.js */
+
+/*! ../../../../../base/common/strings.js */
+
+/*! ./smallImmutableSet.js */
+
+/*! ./pieceTreeTextBuffer/pieceTreeTextBufferBuilder.js */
+
+/*! ./pieceTreeTextBuffer.js */
+
+/*! ../encodedTokenAttributes.js */
+
+/*! ./textModelPart.js */
+
+/*! ../../../platform/log/common/log.js */
+
+/*! ../core/range.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../../../base/common/diff/diff.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ./editorColors.js */
+
+/*! ../../../../../base/common/arrays.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../../base/common/map.js */
+
+/*! ./observableInternal/utils.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ../../../../base/common/assert.js */
+
+/*! ../core/selection.js */
+
+/*! ../../base/common/objects.js */
+
+/*! ../platform.js */
+
+/*! ./colors/quickpickColors.js */
+
+/*! ./path.js */
+
+/*! ../core/position.js */
+
+/*! ./guidesTextModelPart.js */
+
+/*! ../../../platform/configuration/common/configuration.js */
+
+/*! ../../../../../base/common/event.js */
+
+/*! . */
+
+/*! ./beforeEditPositionMapper.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../../../../nls.js */
+
+/*! ../../core/range.js */
+
+/*! ./tokenizationRegistry.js */
+
+/*! ../../core/range.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ../../../base/common/uint.js */
+
+/*! ../assert.js */
+
+/*! ../../../base/common/uri.js */
+
+/*! ./concat23Trees.js */
+
+/*! ./symbols.js */
+
+/*! ./pieceTreeBase.js */
+
+/*! ../tokens/contiguousMultilineTokensBuilder.js */
+
+/*! ./algorithms/myersDiffAlgorithm.js */
+
+/*! ../core/lineRange.js */
+
+/*! ./length.js */
+
+/*! ../core/textEdit.js */
+
+/*! ../../../../base/common/strings.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ./treeViewsDnd.js */
+
+/*! ../encodedTokenAttributes.js */
+
+/*! ./codiconsUtil.js */
+
+/*! ./bracketPairsTextModelPart/colorizedBracketPairsDecorationProvider.js */
+
+/*! ./colors/searchColors.js */
+
+/*! ./editorColors.js */
+
+/*! ./contiguousMultilineTokens.js */
+
+/*! ./base.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../strings.js */
+
+/*! ./length.js */
+
+/*! ../../../../base/common/event.js */
+
+/*! ../core/range.js */
+
+/*! ../../../nls.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../../../platform/instantiation/common/extensions.js */
+
+/*! ../../../platform/theme/common/colorRegistry.js */
+
+/*! ../../../platform/files/common/files.js */
+
+/*! ./nodeReader.js */
+
+/*! ../../../base/common/path.js */
+
+/*! ../tokens/sparseTokensStore.js */
+
+/*! ./cancellation.js */
+
+/*! ../core/position.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ../../languages/supports/richEditBrackets.js */
+
+/*! ./smallImmutableSet.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ../../core/range.js */
+
+/*! ./observableInternal/api.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ../../../../base/common/lifecycle.js */
+
+/*! ../../../platform/undoRedo/common/undoRedo.js */
+
+/*! ../../../base/common/objects.js */
+
+/*! ../../../base/common/assert.js */
+
+/*! ../../core/offsetRange.js */
+
+/*! ../colorUtils.js */
+
+/*! ../../../base/common/color.js */
+
+/*! ../../registry/common/platform.js */
+
+/*! ./debugName.js */
+
+/*! ../../../platform/configuration/common/configurationRegistry.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../colorUtils.js */
+
+/*! ./colors/menuColors.js */
+
+/*! ../core/offsetRange.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ../../base/common/lifecycle.js */
+
+/*! ../../../../base/common/cache.js */
+
+/*! ./modesRegistry.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ./baseColors.js */
+
+/*! ../colorUtils.js */
+
+/*! ../../../platform/log/common/log.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ./path.js */
+
+/*! ./position.js */
+
+/*! . */
+
+/*! ./configuration.js */
+
+/*! ../core/range.js */
+
+/*! ./lineSequence.js */
+
+/*! ../../../nls.js */
+
+/*! ./baseColors.js */
+
+/*! ../../base/common/event.js */
+
+/*! ./nls.messages.js */
+
+/*! ../../jsonschemas/common/jsonContributionRegistry.js */
+
+/*! ./lineTokens.js */
+
+/*! ../colorUtils.js */
+
+/*! ./position.js */
+
+/*! ../core/selection.js */
+
+/*! ../languages/language.js */
+
+/*! ./colors/editorColors.js */
+
+/*! ./baseColors.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../../../../base/common/arrays.js */
+
+/*! ../utils.js */
+
+/*! ../textModelEvents.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../diff/linesDiffComputers.js */
+
+/*! ../core/position.js */
+
+/*! ./logging.js */
+
+/*! ../../../base/common/arraysFind.js */
+
+/*! ./platform.js */
+
+/*! ../../../base/common/uint.js */
+
+/*! ../../../encodedTokenAttributes.js */
+
+/*! ../core/range.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ./model.js */
+
+/*! ./baseColors.js */
+
+/*! ../../../../nls.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ./length.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ./observableInternal/promise.js */
+
+/*! ../core/textChange.js */
+
+/*! ./defaultLinesDiffComputer/defaultLinesDiffComputer.js */
+
+/*! ../../../../../base/common/lifecycle.js */
+
+/*! ../../../platform/instantiation/common/extensions.js */
+
+/*! ../../core/range.js */
+
+/*! ../../../platform/registry/common/platform.js */
+
+/*! ./tokens.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ./lazy.js */
+
+/*! ./utils.js */
+
+/*! ../tokens/contiguousTokensStore.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ../core/range.js */
+
+/*! ./miscColors.js */
+
+/*! ./theme.js */
+
+/*! ../../../base/common/async.js */
+
+/*! ../../../platform/instantiation/common/extensions.js */
+
+/*! ../../../platform/undoRedo/common/undoRedo.js */
+
+/*! ../../../../nls.js */
+
+/*! ./supports/characterPair.js */
+
+/*! ../../../base/common/buffer.js */
+
+/*! ../../../base/common/stopwatch.js */
+
+/*! ../../../../base/common/event.js */
+
+/*! ./textModelPart.js */
+
+/*! ./debugName.js */
+
+/*! ./offsetRange.js */
+
+/*! ../core/textModelDefaults.js */
+
+/*! ../languages/modesRegistry.js */
+
+/*! ../../base/common/path.js */
+
+/*! ../../../../nls.js */
+
+/*! ../../../platform/theme/common/themeService.js */
+
+/*! ../colorUtils.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../../../base/common/severity.js */
+
+/*! ../languages/linkComputer.js */
+
+/*! ../../../base/common/color.js */
+
+/*! ./colors/inputColors.js */
+
+/*! ../lifecycle.js */
+
+/*! ../../../base/common/linkedList.js */
+
+/*! ../../core/range.js */
+
+/*! ../equals.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../languages.js */
+
+/*! ./editorColors.js */
+
+/*! ./platform.js */
+
+/*! ../base/common/worker/simpleWorker.js */
+
+/*! ./baseColors.js */
+
+/*! ./observableInternal/derived.js */
+
+/*! ./lifecycle.js */
+
+/*! ./tokens.js */
+
+/*! ../event.js */
+
+/*! ./strings.js */
+
+/*! ./miscColors.js */
+
+/*! ../../../base/common/themables.js */
+
+/*! ./textModelSearch.js */
+
+/*! ../../../base/common/resources.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ./platform.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ../../../../base/common/async.js */
+
+/*! ../../core/range.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ./platform.js */
+
+/*! ./logging.js */
+
+/*! ./unicodeTextModelHighlighter.js */
+
+/*! ./indentationGuesser.js */
+
+/*! ../../../base/common/platform.js */
+
+/*! ../colorUtils.js */
+
+/*! ../core/cursorColumns.js */
+
+/*! ./semanticTokensProviderStyling.js */
+
+/*! ./strings.js */
+
+/*! ../model/textModelSearch.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ./positionToOffset.js */
+
+/*! ../../../platform/theme/common/colorRegistry.js */
+
+/*! ./functional.js */
+
+/*! ../../../../../base/common/errors.js */
+
+/*! ../rangeMapping.js */
+
+/*! ./smallImmutableSet.js */
+
+/*! ../linesDiffComputer.js */
+
+/*! ./languageConfiguration.js */
+
+/*! ./baseColors.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ../../../../base/common/arrays.js */
+
+/*! ../../../base/common/glob.js */
+
+/*! ../../core/wordHelper.js */
+
+/*! ../../../nls.js */
+
+/*! ./brackets.js */
+
+/*! ../../../base/common/async.js */
+
+/*! ./computeMovedLines.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ./event.js */
+
+/*! ../../../../../base/common/errors.js */
+
+/*! ../../../../base/common/event.js */
+
+/*! ./pieceTreeBase.js */
+
+/*! ../services/treeSitterParserService.js */
+
+/*! ../encodedTokenAttributes.js */
+
+/*! ../../languages/supports.js */
+
+/*! ../../model.js */
+
+/*! ./errors.js */
+
+/*! ./stopwatch.js */
+
+/*! ./languagesAssociations.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../registry/common/platform.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ./common/services/editorSimpleWorker.js */
+
+/*! ./arrays.js */
+
+/*! ../core/indentation.js */
+
+/*! ./prefixSumComputer.js */
+
+/*! ../colorUtils.js */
+
+/*! ../../../platform/registry/common/platform.js */
+
+/*! ../core/range.js */
+
+/*! ./algorithms/myersDiffAlgorithm.js */
+
+/*! ../../../nls.js */
+
+/*! ../../core/position.js */
+
+/*! ../tokens/lineTokens.js */
+
+/*! ../../../../base/common/strings.js */
+
+/*! ../standalone/standaloneEnums.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../../base/common/lifecycle.js */
+
+/*! ./baseColors.js */
+
+/*! ../../core/editorColorRegistry.js */
+
+/*! ./contiguousTokensEditing.js */
+
+/*! ./utils.js */
+
+/*! ../core/range.js */
+
+/*! ./platform.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../../../../base/common/arrays.js */
+
+/*! ../../core/offsetRange.js */
+
+/*! ../../../textModelBracketPairs.js */
+
+/*! ./codiconsUtil.js */
+
+/*! ../model/textModel.js */
+
+/*! ../../../base/common/buffer.js */
+
+/*! ../core/wordHelper.js */
+
+/*! ../lifecycle.js */
+
+/*! ./supports/electricCharacter.js */
+
+/*! ./diffAlgorithm.js */
+
+/*! ../../../../base/common/lifecycle.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ../../core/range.js */
+
+/*! ../../../core/offsetRange.js */
+
+/*! ./lineTokens.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ./uri.js */
+
+/*! ./editStack.js */
+
+/*! ../core/lineRange.js */
+
+/*! ../../../base/common/network.js */
+
+/*! ../languages/modesRegistry.js */
+
+/*! ../tokens/sparseMultilineTokens.js */
+
+/*! ../core/lineRange.js */
+
+/*! ../../../base/common/uri.js */
+
+/*! ../../../base/common/buffer.js */
+
+/*! ../../../platform/configuration/common/configuration.js */
+
+/*! ../../../../nls.js */
+
+/*! ./ast.js */
+
+/*! ./cache.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../core/characterClassifier.js */
+
+/*! ../../../../nls.js */
+
+/*! ./position.js */
+
+/*! ../../../base/common/assert.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../core/eolCounter.js */
+
+/*! ../../nls.js */
+
+/*! ../../../core/range.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ./observableInternal/autorun.js */
+
+/*! ../core/position.js */
+
+/*! ./tokenizer.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../../jsonschemas/common/jsonContributionRegistry.js */
+
+/*! ../errors.js */
+
+/*! ../../../base/common/arraysFind.js */
+
+/*! ../../../base/common/numbers.js */
+
+/*! ./length.js */
+
+/*! ../../contextkey/common/contextkey.js */
+
+/*! ../../../../base/common/lifecycle.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../../../base/common/types.js */
+
+/*! ./language.js */
+
+/*! ../../../platform/instantiation/common/extensions.js */
+
+/*! ../../../base/common/network.js */
+
+/*! ../../../nls.js */
+
+/*! ./ast.js */
+
+/*! ../core/wordCharacterClassifier.js */
+
+/*! ../../../platform/environment/common/environment.js */
+
+/*! ./common/services/editorWorkerHost.js */
+
+/*! ../languages.js */
+
+/*! ./process.js */
+
+/*! ../../../../base/common/errors.js */
+
+/*! ../core/position.js */
+
+/*! ../../../../base/common/arraysFind.js */
+
+/*! ./supports/richEditBrackets.js */
+
+/*! ../../base/common/codicons.js */
+
+/*! ../core/lineRange.js */
+
+/*! ../../../core/range.js */
+
+/*! ../core/range.js */
+
+/*! ../../core/range.js */
+
+/*! ./languageSelector.js */
+
+/*! ./inputColors.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ./path.js */
+
+/*! ../../../base/common/collections.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../core/eolCounter.js */
+
+/*! ../languages/language.js */
+
+/*! ../languages.js */
+
+/*! ../equals.js */
+
+/*! ./platform.js */
+
+/*! ../../../../base/common/lifecycle.js */
+
+/*! ./diffAlgorithm.js */
+
+/*! ./textModelTokens.js */
+
+/*! ./colors/minimapColors.js */
+
+/*! ../../../core/offsetRange.js */
+
+/*! ./bracketPairsTree/bracketPairsTree.js */
+
+/*! ../tokens/lineTokens.js */
+
+/*! ./length.js */
+
+/*! ./errors.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ../../../platform/markers/common/markers.js */
+
+/*! ./model.js */
+
+/*! ../../../base/common/network.js */
+
+/*! ../languages.js */
+
+/*! ../errors.js */
+
+/*! ../languages/language.js */
+
+/*! ../../model/mirrorTextModel.js */
+
+/*! ./treeSitterTokens.js */
+
+/*! ../../../../nls.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../../../base/common/assert.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ./uri.js */
+
+/*! ./event.js */
+
+/*! ../hash.js */
+
+/*! ../../../base/common/color.js */
+
+/*! ./editorWorkerHost.js */
+
+/*! ../../../base/common/keyCodes.js */
+
+/*! ../../model.js */
+
+/*! ../../../base/common/network.js */
+
+/*! ./errors.js */
+
+/*! ./strings.js */
+
+/*! ./range.js */
+
+/*! ../languages/languageConfigurationRegistry.js */
+
+/*! ../languageConfiguration.js */
+
+/*! ../../core/offsetRange.js */
+
+/*! ../../../base/common/color.js */
+
+/*! ../colorUtils.js */
+
+/*! ../model.js */
+
+/*! ./legacyLinesDiffComputer.js */
+
+/*! ../languages.js */
+
+/*! ../core/position.js */
+
+/*! ../../../nls.js */
+
+/*! ../../../../base/common/arrays.js */
+
+/*! ./rbTreeBase.js */
+
+/*! ./algorithms/diffAlgorithm.js */
+
+/*! ./richEditBrackets.js */
+
+/*! ../equals.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ./editorBaseApi.js */
+
+/*! ../rangeMapping.js */
+
+/*! ../model.js */
+
+/*! ../../../../nls.js */
+
+/*! ../languages/supports/inplaceReplaceSupport.js */
+
+/*! ../../../../base/common/strings.js */
+
+/*! ../languageConfiguration.js */
+
+/*! ./lifecycle.js */
+
+/*! ../lifecycle.js */
+
+/*! ./bracketPairsTextModelPart/bracketPairsImpl.js */
+
+/*! ../../../nls.js */
+
+/*! ./observableInternal/logging.js */
+
+/*! ../equals.js */
+
+/*! ../../base/common/glob.js */
+
+/*! ./rangeMapping.js */
+
+/*! ../../core/eolCounter.js */
+
+/*! ./intervalTree.js */
+
+/*! ../core/selection.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ./codicons.js */
+
+/*! ./supports/onEnter.js */
+
+/*! ../supports.js */
+
+/*! ./editorColors.js */
+
+/*! ../../core/range.js */
+
+/*! ../lifecycle.js */
+
+/*! ../../../base/common/hash.js */
+
+/*! ./linkedList.js */
+
+/*! ../../../base/common/resources.js */
+
+/*! ./range.js */
+
+/*! ../../../base/common/platform.js */
+
+/*! ./length.js */
+
+/*! ./platform.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ../../../base/common/arrays.js */
+
+/*! ./lineTokens.js */
+
+/*! ../../../../nls.js */
+
+/*! . */
+
+/*! ./strings.js */
+
+/*! ../model/editStack.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ../languages/defaultDocumentColorsComputer.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ../../registry/common/platform.js */
+
+/*! ../../../base/common/async.js */
+
+/*! ./listColors.js */
+
+/*! ../../../base/common/diff/diff.js */
+
+/*! ./lazyObservableValue.js */
+
+/*! ./supports/indentRules.js */
+
+/*! ./colors/baseColors.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ./pieceTreeTextBuffer/pieceTreeTextBuffer.js */
+
+/*! ../core/range.js */
+
+/*! ../../../base/common/platform.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ./strings.js */
+
+/*! ../../../../base/common/arraysFind.js */
+
+/*! ./length.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ./length.js */
+
+/*! ./colors/listColors.js */
+
+/*! ../languages/nullTokenize.js */
+
+/*! ./iterator.js */
+
+/*! ./base.js */
+
+/*! ../../../base/common/hash.js */
+
+/*! ../textModelGuides.js */
+
+/*! ./codiconsLibrary.js */
+
+/*! ../languages/language.js */
+
+/*! ./map.js */
+
+/*! ./base.js */
+
+/*! ../core/position.js */
+
+/*! ../../../../base/common/strings.js */
+
+/*! ../../../platform/theme/common/themeService.js */
+
+/*! ./linesSliceCharSequence.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ./textResourceConfiguration.js */
+
+/*! ./fixedArray.js */
+
+/*! ../../../base/common/iterator.js */
+
+/*! ./textModelSync/textModelSync.impl.js */
+
+/*! ./autorun.js */
+
+/*! ./stringBuilder.js */
+
+/*! ../languages/modesRegistry.js */
+
+/*! ./base.js */
+
+/*! ../../../base/common/buffer.js */
+
+/*! ../../../../base/common/uri.js */
+
+/*! ../../../base/common/objects.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ./debugName.js */
+
+/*! ../../../../../base/common/arrays.js */
+
+/*! ../core/eolCounter.js */
+
+/*! ./ast.js */
+
+/*! ./observableInternal/base.js */
+
+/*! ../../../nls.js */
+
+/*! ../../../platform/theme/common/themeService.js */
+
+/*! ../../../base/common/errors.js */
+
+/*! ../../core/position.js */
+
+/*! ../core/wordHelper.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ../../../platform/instantiation/common/instantiation.js */
+
+/*! ./debugName.js */
+
+/*! ../../../base/common/assert.js */
+
+/*! ../../../../base/common/color.js */
+
+/*! ../../../base/common/types.js */
+
+/*! ./colors/chartsColors.js */
+
+/*! ./cursorColumns.js */
+
+/*! ./smallImmutableSet.js */
+
+/*! ../../../base/common/platform.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../tokens/contiguousMultilineTokensBuilder.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../../../base/common/assert.js */
+
+/*! ../../../base/common/cancellation.js */
+
+/*! ./debugName.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../core/editorColorRegistry.js */
+
+/*! ./scanner.js */
+
+/*! ../../../base/common/stopwatch.js */
+
+/*! ../../../core/textLength.js */
+
+/*! ./richEditBrackets.js */
+
+/*! ../../../base/common/resources.js */
+
+/*! ../../../../platform/theme/common/themeService.js */
+
+/*! ../colorUtils.js */
+
+/*! ../../../../base/common/arrays.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../base/common/uri.js */
+
+/*! ./descriptors.js */
+
+/*! ./tokenizer.js */
+
+/*! ./strings.js */
+
+/*! ./path.js */
+
+/*! ./algorithms/diffAlgorithm.js */
+
+/*! ../../../../base/common/arrays.js */
+
+/*! ./linesSliceCharSequence.js */
+
+/*! ./parser.js */
+
+/*! ./logging.js */
+
+/*! ./editorColors.js */
+
+/*! ../../registry/common/platform.js */
+
+/*! ./tokenizationTextModelPart.js */
+
+/*! ./lazy.js */
+
+/*! ./base.js */
+
+/*! ./errors.js */
+
+/*! ./diffChange.js */
+
+/*! ../../../base/common/platform.js */
+
+/*! ./heuristicSequenceOptimizations.js */
+
+/*! ../core/position.js */
+
+/*! ../model.js */
+
+/*! ../../../platform/instantiation/common/extensions.js */
+
+/*! ./derived.js */
+
+/*! ./utils.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../core/position.js */
+
+/*! ../../../base/common/uri.js */
+
+/*! ../../../base/common/event.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ../languages/modesRegistry.js */
+
+/*! ../../../platform/configuration/common/configurationRegistry.js */
+
+/*! ../../../../../base/common/strings.js */
+
+/*! ../../../../nls.js */
+
+/*! ../assert.js */
+
+/*! ./languageFeatures.js */
+
+/*! ./colorUtils.js */
+
+/*! ./supports/languageBracketsConfiguration.js */
+
+/*! ./range.js */
+
+/*! ../../../base/common/strings.js */
+
+/*! ./extpath.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ../core/range.js */
+
+/*! ../languages/languageConfigurationRegistry.js */
+
+/*! ../../../core/offsetRange.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ./async.js */
+
+/*! ../../../base/common/network.js */
+
+/*! ./semanticTokensStyling.js */
+
+/*! ./offsetRange.js */
+
+/*! ../event.js */
+
+/*! ./listColors.js */
+
+/*! ../../nls.js */
+
+/*! ./characterClassifier.js */
+
+/*! ../../../base/common/lifecycle.js */
+
+/*! ./logging.js */
+
+/*! ../core/wordHelper.js */
+
+/*! ./algorithms/dynamicProgrammingDiffing.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ../languageFeatureRegistry.js */
+
+/*! ../../../base/common/uri.js */
+
+/*! ../textModelSearch.js */
+
+/*! ../../core/lineRange.js */
+
+/*! ../../instantiation/common/instantiation.js */
+
+/*! ./path.js */

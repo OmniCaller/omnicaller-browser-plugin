@@ -7,7 +7,7 @@
 <script lang="ts" setup>
 </script>
 
-<style lang="less" scoped>
+<style scoped>
 .footer {
   width: 100%;
   height: 20px;
